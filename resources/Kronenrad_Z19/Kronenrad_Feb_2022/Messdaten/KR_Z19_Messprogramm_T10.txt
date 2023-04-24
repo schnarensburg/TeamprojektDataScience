@@ -1,0 +1,353 @@
+﻿'KR_Z19_Messprogramm_T10' Datensatzeigenschaften
+
+Probenname: 
+Name des Erstellers: Administrator
+Aufnahmegerät: µCMM 113011003119; LaboratoryMeasurementModule 7.17.1; MeasureSuite 5.3.5
+Erstelldatum: Do 3. Mrz 22:32:52 2022
+Größe: 115692 Punkte (115.6920mm) x 1 Punkte (1.0000µm)
+Abtastabstand: 1.0000µm (hor.), 1.0000µm (vert.)
+
+Vergrößerung: 10.0494x
+Lichtstärke: 1
+Objektiv: 800A
+Tubus: µCMM
+3D-Position: x = 0.0000µm, y = 0.0000µm, z = 0.0000µm
+
+Beschreibung:
+-----------------------
+
+Verarbeitungsstart: Donnerstag, 3. März 2022 22:20:12
+Verarbeitungsende: Donnerstag, 3. März 2022 22:32:52
+Benötigte Zeit: 12.68 min
+Produkt-ID: A140418190
+IFM Seriennummer: 113011003119
+
+Mehrfachmessung Übersichtsdatensatz:
+Gesamte Messungen: 1
+
+Verarbeitungsstart: Donnerstag, 3. März 2022 22:20:14
+Verarbeitungsende: Donnerstag, 3. März 2022 22:32:50
+Benötigte Zeit: 12.61 min
+Produkt-ID: A140418190
+IFM Seriennummer: 113011003119
+
+Spezifische Werte:
+Startposition der Messung:
+	x: 147.913mm
+	y: 207.606mm
+	z: 90.248mm
+Endposition der Messung:
+	x: 149.001mm
+	y: 207.606mm
+	z: 91.504mm
+Geschätzte Vertikale Auflösung: 0.103µm
+Geschätzte Laterale Auflösung: 3.892µm
+
+Real3D Einstellungen:Start Alpha: 0.000°
+Ende Alpha: 341.053°
+Min Radius: -3.081mm
+Max Radius: -2.560mm
+Überlappanteil:: 30.000
+Probe: -
+Ungefähre X-Dimension der Messung: 1.312mm
+Ungefähre Y-Dimension der Messung: 1.312mm
+Z-Dimension der Messung: 1.257mm
+Tischposition: 148.390mm 207.617mm 90.862mm
+Geschätzte Datensatzreduktionsunsicherheit: -1000.000mm
+Dezimierung: 8 (1, 8)
+
+
+Messeinstellungen:
+Messmodus: Fokus-Variation mit SmartFlash 2.0
+Optimiert für sehr kleine Strukturen: Nein
+Belichtungszeit: 650.0 µs
+Kontrast: 0.55
+Vergrößerung: 10.0494x
+z-Position vor der Messung: 91.529mm
+Sättigung: 1
+Verstärkung: 1
+Untere Histogrammgrenze: 0 / 255
+Obere Histogrammgrenze: 255 / 255
+XSmartFlash: Nein
+Autofokus verwendet: Nein
+Anpassen des Abtastabstandes an laterale Auflösung: Nein
+Polarisator: Aktiviert
+Rotationswinkel: 341.053°
+Kippwinkel: 65.000°
+
+Lichtquellen-Einstellungen:
+Name: SmartFlash Lightsource G2
+Koaxiale Beleuchtung verfügbar: Ja
+Ringlicht verfügbar: Ja
+Beleuchtung koaxiales Licht: 1
+Beleuchtung Ringlicht: 0
+
+Systemjustierungs-Status: ADJUSTED_AND_CALIBRATED
+
+Experten-Messeinstellungen:
+XSmartFlash Faktor: 5
+Datenerfassung mit hoher Geschwindigkeit: Ja
+Autom. Bereichswahl: Ja
+Ausreißer entfernen: 0.93
+Wiederholbarkeit automatisch einstellen: Nein
+Replikamodus: Nein
+
+Information für Support:
+MAMB: 8000
+AV: 1
+AAV: Nein
+SIS: Nein
+HAC: Ja
+CM: Ja
+RE: Nein
+RM: Nein
+VDT: 0.5
+FCM: Ja
+SF: Nein
+
+Umgebungssystem Sensorinformation:
+
+Messung OK. Alle Sensoren waren während der Messung innerhalb des erwarteten Bereichs.
+
+Raum-Kategorie: Produktionsumgebung VDI2627 Klasse 4
+
+Sensor Druckluft: OK
+
+Absolut: 6.513bar
+Grenzen überschritten: nein
+Start: 6.486bar
+Min: 6.261bar
+Max: 6.584bar
+Mittelwert: 6.491bar
+Standardabweichung: 0.031bar
+
+Gradient: 0.009bar/h
+Grenzen überschritten: nein
+Min: -1.490bar/h
+Max: 0.709bar/h
+Mittelwert: 285.054e-6bar/h
+Standardabweichung: 0.162bar/h
+
+Änderungsgeschwindigkeit: 0.237bar
+Grenzen überschritten: nein
+Min: 0.000bar/h
+Max: 0.316bar/h
+Mittelwert: 0.132bar/h
+Standardabweichung: 0.084bar/h
+
+Sensor Z-Achse/oben: OK
+
+Absolut: 26.438°C
+Grenzen überschritten: nein
+Start: 25.165°C
+Min: 25.165°C
+Max: 26.726°C
+Mittelwert: 26.181°C
+Standardabweichung: 0.357°C
+
+Gradient: -0.116°C/h
+Grenzen überschritten: nein
+Min: -2.916°C/h
+Max: 2.014°C/h
+Mittelwert: 0.049°C/h
+Standardabweichung: 0.088°C/h
+
+Änderungsgeschwindigkeit: 0.110°C
+Grenzen überschritten: nein
+Min: 0.000°C/h
+Max: 0.297°C/h
+Mittelwert: 0.083°C/h
+Standardabweichung: 0.059°C/h
+
+Sensor Z-Achse/mitte: OK
+
+Absolut: 26.870°C
+Grenzen überschritten: nein
+Start: 25.160°C
+Min: 25.160°C
+Max: 27.104°C
+Mittelwert: 26.536°C
+Standardabweichung: 0.393°C
+
+Gradient: -0.100°C/h
+Grenzen überschritten: nein
+Min: -0.114°C/h
+Max: 4.299°C/h
+Mittelwert: 0.067°C/h
+Standardabweichung: 0.129°C/h
+
+Änderungsgeschwindigkeit: 0.100°C
+Grenzen überschritten: nein
+Min: 0.000°C/h
+Max: 0.554°C/h
+Mittelwert: 0.096°C/h
+Standardabweichung: 0.086°C/h
+
+Sensor Z-Achse/unten: OK
+
+Absolut: 26.546°C
+Grenzen überschritten: nein
+Start: 25.041°C
+Min: 25.041°C
+Max: 26.919°C
+Mittelwert: 26.325°C
+Standardabweichung: 0.421°C
+
+Gradient: -0.164°C/h
+Grenzen überschritten: nein
+Min: -0.188°C/h
+Max: 2.606°C/h
+Mittelwert: 0.058°C/h
+Standardabweichung: 0.103°C/h
+
+Änderungsgeschwindigkeit: 0.170°C
+Grenzen überschritten: nein
+Min: 0.000°C/h
+Max: 0.366°C/h
+Mittelwert: 0.099°C/h
+Standardabweichung: 0.068°C/h
+
+Sensor Optik: OK
+
+Absolut: 28.215°C
+Grenzen überschritten: nein
+Start: 25.794°C
+Min: 25.794°C
+Max: 28.980°C
+Mittelwert: 28.274°C
+Standardabweichung: 0.405°C
+
+Gradient: 0.110°C/h
+Grenzen überschritten: nein
+Min: -0.531°C/h
+Max: 7.262°C/h
+Mittelwert: 0.115°C/h
+Standardabweichung: 0.620°C/h
+
+Änderungsgeschwindigkeit: 0.255°C
+Grenzen überschritten: nein
+Min: 0.000°C/h
+Max: 1.920°C/h
+Mittelwert: 0.181°C/h
+Standardabweichung: 0.285°C/h
+
+Sensor X-Achse: OK
+
+Absolut: 26.048°C
+Grenzen überschritten: nein
+Start: 25.156°C
+Min: 25.156°C
+Max: 26.443°C
+Mittelwert: 25.924°C
+Standardabweichung: 0.317°C
+
+Gradient: -0.047°C/h
+Grenzen überschritten: nein
+Min: -0.464°C/h
+Max: 3.030°C/h
+Mittelwert: 0.034°C/h
+Standardabweichung: 0.092°C/h
+
+Änderungsgeschwindigkeit: 0.160°C
+Grenzen überschritten: nein
+Min: 0.000°C/h
+Max: 0.295°C/h
+Mittelwert: 0.085°C/h
+Standardabweichung: 0.049°C/h
+
+Sensor X-Verfahrweg/rechts: OK
+
+Absolut: 25.651°C
+Grenzen überschritten: nein
+Start: 25.088°C
+Min: 25.062°C
+Max: 25.855°C
+Mittelwert: 25.388°C
+Standardabweichung: 0.274°C
+
+Gradient: -0.091°C/h
+Grenzen überschritten: nein
+Min: -1.689°C/h
+Max: 2.204°C/h
+Mittelwert: 0.022°C/h
+Standardabweichung: 0.044°C/h
+
+Änderungsgeschwindigkeit: 0.102°C
+Grenzen überschritten: nein
+Min: 0.000°C/h
+Max: 0.119°C/h
+Mittelwert: 0.054°C/h
+Standardabweichung: 0.027°C/h
+
+Sensor X-Verfahrweg/links: OK
+
+Absolut: 25.625°C
+Grenzen überschritten: nein
+Start: 25.088°C
+Min: 25.053°C
+Max: 25.796°C
+Mittelwert: 25.346°C
+Standardabweichung: 0.259°C
+
+Gradient: -0.071°C/h
+Grenzen überschritten: nein
+Min: -0.226°C/h
+Max: 2.971°C/h
+Mittelwert: 0.021°C/h
+Standardabweichung: 0.042°C/h
+
+Änderungsgeschwindigkeit: 0.094°C
+Grenzen überschritten: nein
+Min: 0.000°C/h
+Max: 0.111°C/h
+Mittelwert: 0.053°C/h
+Standardabweichung: 0.025°C/h
+
+Sensor Granitsockel/unten: OK
+
+Absolut: 25.177°C
+Grenzen überschritten: nein
+Start: 24.614°C
+Min: 24.606°C
+Max: 25.655°C
+Mittelwert: 25.155°C
+Standardabweichung: 0.281°C
+
+Gradient: -0.078°C/h
+Grenzen überschritten: nein
+Min: -1.399°C/h
+Max: 0.720°C/h
+Mittelwert: 0.024°C/h
+Standardabweichung: 0.082°C/h
+
+Änderungsgeschwindigkeit: 0.179°C
+Grenzen überschritten: nein
+Min: 0.000°C/h
+Max: 0.196°C/h
+Mittelwert: 0.082°C/h
+Standardabweichung: 0.039°C/h
+
+Sensor Umgebung: OK
+
+Absolut: 26.580°C
+Grenzen überschritten: nein
+Start: 24.704°C
+Min: 24.696°C
+Max: 26.597°C
+Mittelwert: 25.912°C
+Standardabweichung: 0.506°C
+
+Gradient: -0.012°C/h
+Grenzen überschritten: nein
+Min: -0.016°C/h
+Max: 3.110°C/h
+Mittelwert: 0.072°C/h
+Standardabweichung: 0.056°C/h
+
+Änderungsgeschwindigkeit: 0.034°C
+Grenzen überschritten: nein
+Min: 0.000°C/h
+Max: 0.219°C/h
+Mittelwert: 0.088°C/h
+Standardabweichung: 0.033°C/h
+
