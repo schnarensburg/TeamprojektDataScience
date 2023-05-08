@@ -22,7 +22,7 @@ with open ('daten01.csv', 'r') as csv_file:
     csv_reader = csv.reader(csv_file)
     lines = list(csv_reader)
     lines = lines[1:-1]
-with open ('Z13_01.csv', 'w', newline='') as new_csv_file:
+with open ('PointCloud to 3D Model/Z13_01.csv', 'w', newline='') as new_csv_file:
     csv_writer = csv.writer(new_csv_file)
     csv_writer.writerows(lines)
 
@@ -36,4 +36,4 @@ def print_CSV(file):
             print(row)
 
 
-print_CSV('Z13_01.csv')
+print_CSV('PointCloud to 3D Model/Z13_01.csv')
