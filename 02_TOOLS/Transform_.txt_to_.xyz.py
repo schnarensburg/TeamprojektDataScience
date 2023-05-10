@@ -1,7 +1,7 @@
 import os
 
-input_folder = 'input_folder'  # replace with the path to your input folder
-output_folder = 'output_folder'  # replace with the path to your output folder
+input_folder = 'input'  # replace with the path to your input folder
+output_folder = 'output'  # replace with the path to your output folder
 
 # Loop over all .txt files in the input folder
 for filename in os.listdir(input_folder):

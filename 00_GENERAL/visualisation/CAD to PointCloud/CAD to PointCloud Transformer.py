@@ -1,6 +1,6 @@
 #Import open 3d package
 import open3d as o3d
-from open3d.geometry import PointCloud
+#from open3d.geometry import PointCloud
 
 # Adjust number of point in point cloud
 numberofpoints=1000000
