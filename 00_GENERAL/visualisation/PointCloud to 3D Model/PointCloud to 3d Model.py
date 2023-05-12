@@ -1,9 +1,11 @@
 import csv
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
+meisterradZ13 = '/Users/aarongrommes/Library/CloudStorage/OneDrive-Persönlich/Studies/Semester 6/Teamprojekt/TeamprojektDataScience/TeamprojektDataScience/01_DATA/Z13/PointClouds/MeiterradCutZ13.xyz'
+kw01Z13 = '/Users/aarongrommes/Library/CloudStorage/OneDrive-Persönlich/Studies/Semester 6/Teamprojekt/TeamprojektDataScience/TeamprojektDataScience/00_GENERAL/resources/Kopfwelle_Z13/Transformed data/xyzFormat/KW01.xyz'
 
-#Load data from csv file
-with open('Z13_01.csv', 'r') as csv_file:
+#Load data from csv/xyz file
+with open(meisterradZ13, 'r') as csv_file:
     csv_reader = csv.reader(csv_file)
     data = []
     for row in csv_reader:
