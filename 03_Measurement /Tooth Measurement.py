@@ -1,5 +1,8 @@
 import os
 import open3d as o3d
+import numpy as np
+
+#Problematic due to different sizes. Segmentation algorithm cant stack the gears and test.
 
 # Set the input directories for each gear
 gear1_dir = "/Users/aaronneumann/Documents/GitHub/TeamprojektDataScience/01_DATA/Z13/PointClouds/.xyz" #Z13
@@ -13,7 +16,8 @@ for file in gear1_files:
         pcd1 = o3d.io.read_point_cloud(os.path.join(gear1_dir, file))
         pcd1_list.append(pcd1)
 pcd1 = o3d.geometry.PointCloud()
-pcd1.points = o3d.utility.Vector3dVector(np.concatenate([pcd.points for pcd in pcd1_list], axis=0))
+pcd1.points = o3d.utility.Vector3dVector(np.concatenate([np.asarray(pcd.points) for pcd in pcd1_list], axis=0))
+
 
 # Load point cloud data for the second gear
 gear2_files = sorted(os.listdir(gear2_dir))
@@ -26,17 +30,20 @@ pcd2 = o3d.geometry.PointCloud()
 pcd2.points = o3d.utility.Vector3dVector(np.concatenate([pcd.points for pcd in pcd2_list], axis=0))
 
 # Align the point clouds to a common coordinate system using ICP
-icp_result = o3d.registration.registration_icp(pcd1, pcd2, max_correspondence_distance=0.05)
+icp_result = o3d.pipelines.registration.registration_icp(pcd1, pcd2, max_correspondence_distance=0.05)
 pcd2.transform(icp_result.transformation)
 
-# Segment the teeth of each gear using region growing
-seg1 = o3d.geometry.PointCloudSegmentation.create_from_point_cloud_with_radius(pcd1, 0.02)
-seg1.extract_clusters(min_points=10, max_points=100000)
-clusters1 = seg1.get_cluster_point_clouds()
+# Segment the teeth of each gear using region growing - Problematic
+seg1 = pcd1.segment_plane(distance_threshold=0.02, ransac_n=3, num_iterations=100)
+pcd1 = pcd1.select_by_index(seg1.inliers, invert=True)
 
-seg2 = o3d.geometry.PointCloudSegmentation.create_from_point_cloud_with_radius(pcd2, 0.02)
-seg2.extract_clusters(min_points=10, max_points=100000)
-clusters2 = seg2.get_cluster_point_clouds()
+seg2 = pcd2.segment_plane(distance_threshold=0.02, ransac_n=3, num_iterations=100)
+pcd2 = pcd2.select_by_index(seg2.inliers, invert=True)
+
+clusters1, _ = o3d.geometry.cluster_dbscan(pcd1, eps=0.02, min_points=10, print_progress=False)
+clusters2, _ = o3d.geometry.cluster_dbscan(pcd2, eps=0.02, min_points=10, print_progress=False)
+
+
 
 # Compute the length of each tooth in both gears
 tooth_lengths1 = []
