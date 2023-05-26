@@ -5,11 +5,8 @@ import numpy as np
 #Problematic due to different sizes. Segmentation algorithm cant stack the gears and test.
 
 # Set the input directories for each gear
-sript_dir_gear1 = os.path.dirname(os.path.abspath(__file__))
-gear1_dir = os.path.join(sript_dir_gear1, "../01_DATA/Z13/PointClouds/.xyz") #Z13
-
-sript_dir_gear2 = os.path.dirname(os.path.abspath(__file__))
-gear2_dir = os.path.join(sript_dir_gear2, "../01_DATA/Z19/PointClouds/.xyz") #Z19
+gear1_dir = "/Users/aaronneumann/Documents/GitHub/TeamprojektDataScience/01_DATA/Z13/PointClouds/.xyz" #Z13
+gear2_dir = "/Users/aaronneumann/Documents/GitHub/TeamprojektDataScience/01_DATA/Z19/PointClouds/.xyz" #Z19
 
 # Load point cloud data for the first gear
 gear1_files = sorted(os.listdir(gear1_dir))
