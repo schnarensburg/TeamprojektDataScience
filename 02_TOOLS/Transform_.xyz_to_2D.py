@@ -1,6 +1,5 @@
 import os
 import csv
-
 import numpy as np
 
 
@@ -21,33 +20,15 @@ def save_transformed_point_cloud(transformed_points, output_file):
 
 def main():
     dir_gear = os.path.dirname(os.path.abspath(__file__))
-    gear_dir = os.path.join(dir_gear, "../01_DATA/Z19/PointClouds/MeiterradCutZ19.xyz")
+    gear_dir = os.path.join(dir_gear, "../01_DATA/Z13/PointClouds/.xyz/KW01.xyz")
 
-    output_file = '2dimCAD.csv'
+    output_file = '../01_DATA/Z13/PointClouds/.csv2D/KW012D.csv'
 
     point_cloud = np.loadtxt(gear_dir)
 
     transformed_points = transform_point_cloud(point_cloud)
     save_transformed_point_cloud(transformed_points, output_file)
     print("trafo completed")
-
-    '''
-    #Read the point cloud from input_file
-    point_cloud = []
-    with open(gear_dir, 'r') as file:
-        reader = csv.reader(file)
-        for row in reader:
-            point = [float(row[0]), float(row[1]), float(row[2])]
-            point_cloud.append(point)
-
-    #Transform the point cloud
-    transformed_points = transform_point_cloud(point_cloud)
-
-    #Save the transformed point cloud
-    save_transformed_point_cloud(transformed_points, output_file)
-
-    print("Point cloud transformation complete!")
-    '''
 
 
 if __name__ == '__main__':
