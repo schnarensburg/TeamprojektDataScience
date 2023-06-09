@@ -1,7 +1,7 @@
 import os
 
-input_folder = '/Users/aaronneumann/Documents/GitHub/TeamprojektDataScience/01_DATA/Z13/PointClouds/.txt'  # replace with the path to your input folder
-output_folder = '/Users/aaronneumann/Documents/GitHub/TeamprojektDataScience/01_DATA/Z13/PointClouds/.xyz'  # replace with the path to your output folder
+input_folder = '/Users/aaronneumann/Documents/GitHub/TeamprojektDataScience/01_DATA/Z19/Test File'  # replace with the path to your input folder
+output_folder = '/Users/aaronneumann/Documents/GitHub/TeamprojektDataScience/01_DATA/Z19/PointClouds/Output_Test'  # replace with the path to your output folder
 
 # Loop over all .txt files in the input folder
 for filename in os.listdir(input_folder):

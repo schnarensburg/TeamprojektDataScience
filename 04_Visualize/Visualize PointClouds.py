@@ -5,7 +5,7 @@ import os
 
 # INPUT 01_DATA / Load data from file
 script_dir = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(script_dir, "../01_DATA/Z19/PointClouds/MeiterradCutZ19.xyz")
+file_path = os.path.join(script_dir, "/Users/aaronneumann/Documents/GitHub/TeamprojektDataScience/01_DATA/Z19/PointClouds/cutZ19.xyz")
 
 
 INPUTdata: object = np.loadtxt(file_path)

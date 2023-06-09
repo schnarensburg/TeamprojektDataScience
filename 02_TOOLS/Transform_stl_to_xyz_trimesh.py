@@ -18,5 +18,5 @@ def stl_to_xyz(stl_file):
     print(f"XYZ file saved: {xyz_file}")
 
 # Usage example
-stl_file_path = '/Users/aaronneumann/Documents/GitHub/TeamprojektDataScience/01_DATA/Z13/PointClouds/cutCAD_Z13.xyz'
+stl_file_path = '/Users/aaronneumann/Documents/GitHub/TeamprojektDataScience/01_DATA/Z19/Z19 neu.stl'
 stl_to_xyz(stl_file_path)
