@@ -7,7 +7,8 @@ import os
 
 #Load MeisterradCutZ19
 script_dir = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(script_dir, "../01_DATA/Z19/PointClouds/MeiterradCutZ19.xyz")
+#file_path = os.path.join(script_dir, "../01_DATA/Z19/PointClouds/cutCAD_Z13.xyz")
+file_path = '/Users/aarongrommes/Library/CloudStorage/OneDrive-Persönlich/Studies/Semester 6/Teamprojekt/TeamprojektDataScience/TeamprojektDataScience/04_Visualize/PointCloud_to_3DModel.py'
 cloud_data = np.loadtxt(file_path)
 
 #Seperate coordinates in individual arrays
