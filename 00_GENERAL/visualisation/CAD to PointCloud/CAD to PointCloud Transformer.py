@@ -2,10 +2,11 @@
 import open3d as o3d
 #from open3d.geometry import PointCloud
 
+meisterradZ13 = "/Users/aarongrommes/Library/CloudStorage/OneDrive-Persönlich/Studies/Semester 6/Teamprojekt/TeamprojektDataScience/TeamprojektDataScience/01_DATA/Z13/PointClouds/MeiterradCutZ13.xyz"
 # Adjust number of point in point cloud
 numberofpoints=1000000
 #INPUT and READ CAD model
-mesh = o3d.io.read_triangle_mesh("/resources/Kopfwelle_Z13/Transformed data/Z19.stl")
+mesh = o3d.io.read_triangle_mesh(meisterradZ13)
 #Convert to PointCloud
 point_cloud = mesh.sample_points_uniformly(number_of_points=numberofpoints)
 #Visual Pointcloud

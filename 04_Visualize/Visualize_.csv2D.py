@@ -7,7 +7,7 @@ import os
 
 #Load 2dimCAD.csv
 script_dir = os.path.dirname(os.path.abspath(__file__))
-file = os.path.join(script_dir, "../01_DATA/Z13/PointClouds/.csv2D/KW01_2D.csv")
+file = os.path.join(script_dir, "../01_DATA/Z19/PointClouds/2dimZ19CAD.csv")
 
 x = []
 y = []
