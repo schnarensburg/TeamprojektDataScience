@@ -1,10 +1,7 @@
 import os
 
-script_in = os.path.dirname(os.path.abspath(__file__))
-input_folder = os.path.join(script_in, '../01_DATA/Z19/PointClouds/.txt')
-
-script_out = os.path.dirname(os.path.abspath(__file__))
-output_folder = os.path.join(script_out, '../01_DATA/Z19/PointClouds/.xyz')
+input_folder = '/Users/aarongrommes/Library/CloudStorage/OneDrive-Persönlich/Studies/Semester 6/Teamprojekt/TeamprojektDataScience/TeamprojektDataScience/01_DATA/Z19/PointClouds/.txt'  # replace with the path to your input folder
+output_folder = '/Users/aarongrommes/Library/CloudStorage/OneDrive-Persönlich/Studies/Semester 6/Teamprojekt/TeamprojektDataScience/TeamprojektDataScience/01_DATA/Z19/PointClouds/.xyz'  # replace with the path to your output folder
 
 # Loop over all .txt files in the input folder
 for filename in os.listdir(input_folder):
@@ -14,7 +11,7 @@ for filename in os.listdir(input_folder):
             lines = file.readlines()
 
         # Remove the first and the last 2 rows
-        selected_rows = lines[1:-1]
+        selected_rows = lines[2:-2]
 
         # Convert the remaining rows into a list of 3D points
         point_cloud = [[float(x) for x in line.split()] for line in selected_rows]

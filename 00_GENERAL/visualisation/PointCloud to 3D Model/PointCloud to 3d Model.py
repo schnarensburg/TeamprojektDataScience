@@ -1,22 +1,11 @@
 import csv
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-import os
-import requests
-import csv
+meisterradZ13 = '/Users/aarongrommes/Library/CloudStorage/OneDrive-Persönlich/Studies/Semester 6/Teamprojekt/TeamprojektDataScience/TeamprojektDataScience/01_DATA/Z13/PointClouds/MeiterradCutZ13.xyz'
+kw01Z13 = '/Users/aarongrommes/Library/CloudStorage/OneDrive-Persönlich/Studies/Semester 6/Teamprojekt/TeamprojektDataScience/TeamprojektDataScience/00_GENERAL/resources/Kopfwelle_Z13/Transformed data/xyzFormat/KW01.xyz'
 
-#Load data from csv file
-cadZ13 = '/Users/aarongrommes/Library/CloudStorage/OneDrive-Persönlich/Studies/Semester 6/Teamprojekt/TeamprojektDataScience/TeamprojektDataScience/01_DATA/Z13/PointClouds/MeisterradZ13.xyz'
-cadZ13URL = 'https://github.com/schnarensburg/TeamprojektDataScience/raw/4d3857cf1496cfa49c077d7b78cc36c0646cbd9b/00_GENERAL/visualisation/PointCloud%20to%203D%20Model/Z13_01.csv'
-
-response = requests.get(cadZ13URL)
-response.raise_for_status()
-csv_data = response.text
-
-csv_reader = csv.reader(csv_data.splitlines())
-
-
-with open(csv_data, 'r') as csv_file:
+#Load data from csv/xyz file
+with open(meisterradZ13, 'r') as csv_file:
     csv_reader = csv.reader(csv_file)
     data = []
     for row in csv_reader:

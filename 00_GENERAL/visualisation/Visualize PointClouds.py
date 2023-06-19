@@ -1,9 +1,9 @@
 import numpy as np
 import open3d as o3d
 
-meisterradZ19 = "/Users/aarongrommes/Library/CloudStorage/OneDrive-Persönlich/Studies/Semester 6/Teamprojekt/TeamprojektDataScience/TeamprojektDataScience/01_DATA/Z19/PointClouds/MeiterradCutZ19.xyz"
+meisterradZ13 = "/Users/aarongrommes/Library/CloudStorage/OneDrive-Persönlich/Studies/Semester 6/Teamprojekt/TeamprojektDataScience/TeamprojektDataScience/01_DATA/Z13/PointClouds/MeiterradCutZ13.xyz"
 # INPUT 01_DATA / Load data from file
-INPUTdata: object = np.loadtxt(meisterradZ19)
+INPUTdata: object = np.loadtxt(meisterradZ13)
 
 # Convert NumPy array to Open3D PointCloud object
 pcd = o3d.geometry.PointCloud()
