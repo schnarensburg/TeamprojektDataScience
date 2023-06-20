@@ -8,9 +8,9 @@ def measure_variance(txt2D, Z19CAD):
     total_distances = np.zeros(19)
     for file, i in txt2D:
         total_distance = 0
-        for tooth, i in range(1, 19):
-            tooth_data = get_current_tooth_sample(i)
-            tooth_CAD = get_current_tooth_CAD() # Inefficient, every tooth is calculated 100 times, maybe save them in a loop before
+        for tooth, j in range(1, 19):
+            tooth_data = get_current_tooth_sample(file, j)
+            tooth_CAD = get_current_tooth_CAD(Z19CAD, j) # Inefficient, every tooth is calculated 100 times, maybe save them in a loop before
             total_distance += calculate_distance(tooth_data, tooth_CAD)
             total_distances[i] = total_distance
 
@@ -24,6 +24,7 @@ def measure_variance(txt2D, Z19CAD):
 
 
 
+
 def calculate_distance(tooth_data, tooth_CAD):
     distances = np.zeros((tooth_data.shape[0], tooth_CAD.shape[0]))
 
@@ -34,6 +35,6 @@ def calculate_distance(tooth_data, tooth_CAD):
     return total_distance
 
 def get_current_tooth_sample(i):
-
+    return i
 def get_current_tooth_CAD(i):
-
+    return i
