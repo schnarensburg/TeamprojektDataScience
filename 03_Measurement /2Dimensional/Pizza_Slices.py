@@ -46,6 +46,7 @@ def save_points_within_corridor(gear_data, output_file, corridor_radius, corrido
         for line in lines:
             x, y = map(float, line.split())
             point = (x, y)
+
             if is_point_in_circular_sector(point, corridor_radius, corridor_angle):
                 x_values.append(x)
                 y_values.append(y)
@@ -67,6 +68,6 @@ def save_points_within_corridor(gear_data, output_file, corridor_radius, corrido
 
 plt.figure()
 corridor_radius = 0.0035
-corridor_angle = (90-360/19, 90)
+corridor_angle = (0, 360/19)
 save_points_within_corridor(file_in, 'new.txt', corridor_radius, corridor_angle)
 plt.show()
