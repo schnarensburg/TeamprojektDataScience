@@ -5,10 +5,10 @@ def remove_y(data):
     return [[x, z] for x, y, z in data]
 
 dir_in = os.path.dirname(os.path.abspath(__file__))
-input_folder = os.path.join(dir_in, '../01_DATA/Z13/PointClouds/.txt')
+input_folder = os.path.join(dir_in, '../01_DATA/Z13/Messungen Z13 Qass')
 
 dir_out = os.path.dirname(os.path.abspath(__file__))
-output_folder = os.path.join(dir_out, '../01_DATA/Z13/PointClouds/.txt2D')
+output_folder = os.path.join(dir_out, '../01_DATA/Z13/PointClouds/Qasstxt2D')
 
 for filename in os.listdir(input_folder):
     if filename.endswith('.txt'):

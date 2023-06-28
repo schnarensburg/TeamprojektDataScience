@@ -1,10 +1,10 @@
 import os
 
 script_in = os.path.dirname(os.path.abspath(__file__))
-input_folder = os.path.join(script_in, '../01_DATA/Z19/PointClouds/.txt')
+input_folder = os.path.join(script_in, '../01_DATA/Z13/Messungen Z13 Qass')
 
 script_out = os.path.dirname(os.path.abspath(__file__))
-output_folder = os.path.join(script_out, '../01_DATA/Z19/PointClouds/.xyz')
+output_folder = os.path.join(script_out, '../01_DATA/Z13/PointClouds/Qass.xyz')
 
 # Loop over all .txt files in the input folder
 for filename in os.listdir(input_folder):
